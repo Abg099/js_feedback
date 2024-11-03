@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d0ecec;
+}
+
+.feedback-container {
+    background-color: #eaf4f4;
+    padding: 2rem;
+    width: 450px;
+    height: 300px;
+    
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-container h2 {
+    color: #2f7a3e;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.feedback-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.feedback-option {
+    background-color: #eaf4f4;
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.feedback-option span {
+    font-size: 3.5rem;
+}
+
+.feedback-option p {
+    margin-top: 0.5rem;
+    color: #2f7a3e;
+    font-size: 0.9rem;
+}
+
+.feedback-option.selected {
+    background-color: #a3c7a3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button#sendReview {
+    background-color: #2f7a3e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 0.9rem;
+}
+
+button#sendReview:hover {
+    background-color: #256d30;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
